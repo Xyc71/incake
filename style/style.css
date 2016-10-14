@@ -1,0 +1,396 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color:rgb(80,80,80)
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color:rgb(80,80,80)
+}
+.layout {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+
+/*index*/
+.header {
+    border-bottom: 1px solid #0f3677;
+}
+.header_t{
+    height: 40px;
+    overflow: hidden;
+}
+.welcome{
+    padding-left: 10px;
+    overflow: hidden;
+}
+.welcome p{
+    float: left;
+    color: #969696;
+    line-height: 40px;
+    margin-right: 20px;
+}
+.welcome .wel{
+    margin-right: 40px;
+}
+.header_b{
+    padding: 8px 0 17px;
+    position: relative;
+}
+.header_b:after{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.logo{
+    float: left;
+}
+.nav{
+    height: 47px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+.nav li{
+    width: 140px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    border-bottom: 4px solid #fff;
+}
+.nav span{
+    display: block;
+    text-align: center;
+}
+.en{
+    font-size: 12px;
+    line-height: 16px;
+}
+.zh{
+    font-size: 16px;
+    line-height: 18px;
+}
+.line{
+    width: 20px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    background: url("../img/nav_item_split_bg.png");
+}
+.subnav{
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 47px;
+    background: #0f3677;
+    border-top: 4px solid #0f3677;
+    border-bottom: 4px solid #c81528;
+    display: none;
+    z-index: 100;
+}
+.subnav li{
+    width: 130px;
+    margin: 0 auto;
+    border-bottom: 1px solid #19468d;
+    padding: 10px 0 8px;
+    margin-left: 4px;
+    height: 36px;
+}
+.subnav li a{
+    color:  #82aae6;
+}
+.nav .active{
+    border-bottom: 4px solid #0f3677;
+}
+.nav .active>a{
+     color: #0f3677
+}
+
+/*banner*/
+.banner{
+    min-width: 1180px;
+    margin: 0 auto;
+    height: 580px;
+    background: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+.imgBox{
+    height: 580px;
+    position: relative;
+    width: 9961px;
+
+}
+.imgBox li{
+    float:left;
+    width: 1423px;
+    height: 580px;
+}
+.img1{
+    background: url("../img/1.jpg") no-repeat center;
+}
+.img2{
+    background: url("../img/2.jpg") no-repeat center;
+}
+.img3{
+    background: url("../img/3.jpg") no-repeat center;
+}
+.img4{
+    background: url("../img/4.jpg") no-repeat center;
+}
+.img5{
+    background: url("../img/5.jpg") no-repeat center;
+}
+.iconBox{
+    position: absolute;
+    left: 50%;
+    width: 130px;
+    margin-left: -65px;
+    z-index: 9;
+    bottom: 5px;
+}
+.iconBox li{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #595858;
+    cursor: pointer;
+}
+.iconBox .bingo{
+    background: #c81528;
+}
+.btnl,.btnr{
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    width: 30px;
+    height: 56px;
+    z-index: 2;
+}
+.btnl{
+    left: 60px;
+    background: url("../img/banner_arrow.png") no-repeat left bottom;
+}
+.btnr{
+    right:60px;
+    background: url("../img/banner_arrow.png") no-repeat left top;
+}
+/*container*/
+.kind{
+    width: 100%;
+    margin-top: 40px;
+}
+.title{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    position: relative;
+}
+.title_text{
+    display: inline-block;
+    font-size: 24px;
+    color: #0f3677;
+    background: url("../img/title_bg.png") no-repeat left center;
+    padding-left: 40px;
+}
+.title a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.title img{
+    border: 0px;
+    vertical-align: top;
+}
+.list{
+    width: 100%;
+    overflow: hidden;
+}
+.list dl{
+    width: 260px;
+    height: 358px;
+    float: left;
+    margin:32px 10px 0px 25px;
+}
+.list dt{
+    width: 260px;
+    height: 260px;
+    display: block;
+    position: relative
+}
+.list dt a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.list dt img{
+    height: 100%;
+    width: 100%;
+}
+.type{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: url("../img/mask_bg.png") repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    display: none;
+}
+.list dd{
+    width: 100%;
+    height: 98px;
+    background: #f5f5f5;
+}
+.list p{
+    text-align: center;
+}
+.size{
+    color: #000000;
+}
+.list .zh{
+    font-size: 18px;
+    padding-top: 10px
+}
+.list .en{
+    font-size: 14px;
+    line-height: 24px;
+}
+.price{
+    font-size: 20px;
+}
+/*detail*/
+.showpic{
+    width: 620px;
+    float: left;
+}
+.showpic_t{
+    width: 100%;
+    height: 500px;
+    margin: 20px 0;
+}
+.btnlist{
+    width: 110px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.showlist{
+    width: 500px;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.up,.down{
+    width:108px;
+    height: 28px;
+    position: absolute;
+    left: 0;
+    border: 1px solid #d8d8d8;
+    background: url("../img/detail_icons.png") no-repeat;
+}
+.up{
+    top: 1px;
+}
+.down{
+    background-position: -110px -30px;
+    bottom: 1px;
+}
+.sm_imglist{
+    height: 440px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -220px;
+    overflow: hidden;
+    width: 100%;
+}
+.ball{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.ball li{
+    width: 104px;
+    height: 104px;
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 4px;
+    border: 1px solid #ffffff;
+
+}
+.ball .activeb{
+    border: 1px solid #d8d8d8;
+}
+.ball img{
+    display: block;
+    border: 0px;
+}
+.showlist img{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.showlist li{
+    display: none;
+}
+.mask{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.bigImg{
+    position: absolute;
+    left: 510px;
+    top: -4px;
+    width: 500px;
+    height: 500px;
+    z-index: 99;
+    overflow: hidden;
+    border: 4px solid #999999;
+    display: none;
+}
+.bigImg .imgr{
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    left: 0;
+}
+.filter{
+    width: 250px;
+    height:250px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
